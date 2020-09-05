@@ -16,6 +16,6 @@ class Song
         album TEXT
         )
     SQL
-    DB[:conn].execute(sql)
+  DB[:conn].execute("SELECT * FROM songs LIMIT 1")
   end
 end
